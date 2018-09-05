@@ -1,0 +1,11 @@
+email: info@magiclobster.de
+fullname: 'Master Marmelade'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$Z2.TsGllbjBBbLR1Rhn4lu7H9OlXjgz9iopG4FB9BefsoQqe2LjRS

@@ -1,0 +1,16 @@
+version: '3'
+services:
+  grav:
+    build: .
+    container_name: grav
+    environment:
+      GRAV_SITE_TITLE: Monster
+      GRAV_SITE_AUTHOR_NAME: Mario
+      GRAV_SITE_AUTHOR_MAIL: mario@magiclobster.de
+      GRAV_SITE_DESCRIPTION: Monster site
+      UPDATE_SCSS: "false"
+      SCSS_LOAD_PATH: /srv/www/user/themes/default-theme/scss
+      THEME_SCSS_PATH:  /srv/www/user/themes/my-theme/scss
+      THEME_CSS_COMPILED_PATH: /srv/www/user/themes/my-theme/css-compiled/template.css
+    ports:
+      - "8585:80"
