@@ -1,7 +1,12 @@
 version: '3'
 services:
   grav:
-    build: .
+    build:
+      context: .
+      args:
+        SKELETON_NAME: onepage-site
+        SKELETON_VERSION: 2.0.0
+        USE_SKELETON: "true"
     container_name: grav
     environment:
       GRAV_SITE_TITLE: Monster
